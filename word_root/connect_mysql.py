@@ -21,7 +21,6 @@ class ConnectMysql(object):
                                           user=conf['db_user'],
                                           passwd=conf['db_pwd'],
                                           db=conf['db_name'])
-
         self.p = self.db_connect.cursor()
 
     def close(self):

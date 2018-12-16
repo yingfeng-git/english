@@ -1,4 +1,3 @@
-import pandas as pd
 from word_root import connect_mysql as mysql
 
 p = mysql.ConnectMysql().connect()
@@ -28,7 +27,6 @@ def is_chinese(uchar):
 
 
 top20000 = sql_query('select word from top20000_word where word = "asdfasfasfasdfasf" ;')
-print(len(top20000))
 while 1:
     word = input("输入中文或者英文:")
     if is_chinese(word):
